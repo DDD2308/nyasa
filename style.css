@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #eef1ea;
+}
+.education-section {
+  display: block; /* Make sure it's set to block or inline */
+  visibility: visible;
+  opacity: 1;
+  position: relative;  /* Ensure the section is positioned relative to place absolute children */
+  width: 100%;         /* Full width of the container */
+}
+
+.education-heading {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  display: block; /* Make sure it's set to block or inline */
+  visibility: visible;
+  opacity: 1;
+  position: relative;  /* Position the heading absolutely within the relative container */
+  top: 0;              /* Move the heading to the top */
+  left: 0;             /* Align the heading to the left */
+  width: 100%;         /* Ensure the heading spans the full width */
+  background-color: #eef1ea; /* Optional: Add a background color to cover any content below */
+  padding: 10px;       /* Add padding around the heading */
+  text-align: center;  /* Center-align the text */
+  font-colour: #1f2937;
+  z-index: 1;  
+/* Ensure the heading is above other content */
+}
+
+.education-subheading {
+  display: block; /* Make sure it's set to block or inline */
+  visibility: visible;
+  opacity: 1;
+  position: relative;  /* Position the heading absolutely within the relative container */
+  width: 100%;         /* Ensure the heading spans the full width */
+  background-color: #eef1ea; /* Optional: Add a background color to cover any content below */
+  padding: 10px;       /* Add padding around the heading */
+  font-size: 18px;     /* Adjust font size as needed */
+  text-align: left;  /* Center-align the text */
+  z-index: 1;         /* Ensure the heading is above other content */
+  font-colour: black;
+  font-weight: normal; /* Change from bold to normal */
+}
+
+/* Make Library and Art bold black without underline */
+.font-bold {
+    font-weight: bold;
+    color: #1f2937;
+    text-decoration: none; /* Remove underline */
+    underline: none;
+}
+
+/* Override any styles that might apply light blue color or underline */
+a.font-bold {
+    color: #1f2937; /* Ensure color is black */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    underline: none;
+}
+
+/* Optionally, add a hover effect to ensure it remains consistent */
+a.font-bold:hover {
+    color: #1f2937;
+    text-decoration: none;
+}
+
+.boldfont {
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.carousel {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    font-colour: black;
+    font-color: black;
+    border: 8px solid black; /* Adjust the border width and color as needed */
+    border-color: #a274f5;
+    background-color:  #f1f2fb; /* Change text color to white */
+    padding: 10px; /* Optional: Add some padding */
+    margin: 10px; /* Optional: Add some margin between cards */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    padding: 10px;
+    text-align: center;
+    font-colour: #4B5563;
+}
+
+.card {
+    font-color: black;
+    border: 8px solid black; /* Adjust the border width and color as needed */
+    border-color: #a274f5;
+    background-color:  #f1f2fb; /* Change text color to white */
+    padding: 10px; /* Optional: Add some padding */
+    margin: 10px; /* Optional: Add some margin between cards */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    padding: 10px;
+    text-align: center;
+    font-colour: #4B5563;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card card-title {
+    font-color: #1f2937;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.know-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.know-more:hover {
+    background-color: none;
+}
+
+/* Slick Carousel Arrows */
+.slick-prev, .slick-next {
+    z-index: 1;
+    cursor: pointer;
+    font-size: 0px; /* Adjust as needed */
+    background: blue; /* Navy blue background */
+    color: black; /* White arrow color */
+    border: black;
+    border-radius: 50%; /* Round button */
+     /* Adjust as needed */
+     /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  flex-shrink: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  border-color: hsl(var(--n) / var(--tw-border-opacity));
+  text-align: center;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--rounded-btn, 0.5rem);
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 1em;
+  min-height: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-transform: var(--btn-text-case, uppercase);
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  border-width: var(--border-btn, 1px);
+  -webkit-animation: button-pop var(--animation-btn, 0.25s) ease-out;
+          animation: button-pop var(--animation-btn, 0.25s) ease-out;
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--n) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--nc) / var(--tw-text-opacity));
+}
+
+.btn-primary {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--p) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--pc) / var(--tw-text-opacity));
+}
+
+.btn-primary:hover, .btn-primary.btn-active {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--pf, var(--p)) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid hsl(var(--p));
+}
+
+.btn-outline.btn-primary {
+  --tw-text-opacity: 1;
+  color: hsl(var(--p) / var(--tw-text-opacity));
+}
+
+.btn-outline.btn-primary:hover {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--pf, var(--p)) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--pc) / var(--tw-text-opacity));
+}
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev:focus, .slick-next:focus {
+    outline: none; /* Remove default focus outline */
+}
