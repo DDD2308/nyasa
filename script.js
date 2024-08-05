@@ -8,13 +8,20 @@ $(document).ready(function(){
         prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
         nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
         responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+             {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
             }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
         ]
     });   
 });
