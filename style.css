@@ -74,7 +74,7 @@ a.font-bold:hover {
 }
 
 .carousel {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -87,6 +87,8 @@ a.font-bold:hover {
 }
 
 .card {
+    width: 100%;
+    height: 200px;
     font-color: black;
     margin: 20px;
     border: 3px solid black; 
@@ -97,6 +99,11 @@ a.font-bold:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.carousal .card {
+    width: 100%;
+    height: 200px;
 }
 
 .card img {
@@ -121,6 +128,11 @@ card-title {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.carousel .slick-slide {
+    box-sizing: border-box; 
+    padding: 0 10px;
 }
 
 .know-more {
