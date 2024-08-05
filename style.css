@@ -85,10 +85,11 @@ a.font-bold:hover {
     flex-wrap: wrap;
     justify-content: center;
     font-colour: #4B5563;
+    gap: 50px;
 }
 
 .card {
-    width: 150px;
+    width: calc(33.33%-50px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 370px;
     border-radius: 8px;
