@@ -234,6 +234,52 @@ card-title {
     right: 10px;
 }
 
+.avatar {
+  position: relative;
+  display: inline-flex;
+}
+
+.avatar > div {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.avatar img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.avatar.placeholder > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .slick-prev:focus, .slick-next:focus {
     outline: none; 
 }
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
