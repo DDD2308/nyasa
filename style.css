@@ -83,13 +83,15 @@ a.font-bold:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 80px;
     font-colour: #4B5563;
 }
 
 .card {
-    width: 200px;
-    height: 375px;
+    width: calc(33.33% - 80px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 370px;
+    border-radius: 8px;
     font-color: black;
     margin: 20px;
 /*     border: 3px solid black; 
